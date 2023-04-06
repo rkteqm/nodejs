@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <title>Using plain html in Pug</title> -->
+    <title>#{title}</title>
+    style
+        include ../static/style.css
+        include ../static/bootstrap.min.css
+
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+
+      <h2>Get this gym membership for $60 - Hurry up Fill this form now!</h2>
+      <p>
+        | #{content}
+      </p>
+      <form class="form-control" action="/" method="POST" id="contact">
+        <input class="form-control" type="text" name="firstname" id="firstname" placeholder="Enter your firstname">
+        <input class="form-control" type="text" name="lastname" id="lastname" placeholder="Enter your lastname">
+        <input class="form-control" type="text" name="email" id="email" placeholder="Enter your email">
+        <input class="form-control" type="text" name="dob" id="dob" placeholder="Enter your dob">
+        <button class="align-center form-btn btn btn-info text-primary" type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="container">
+      <div class="row">
+          | First Name : #{firstname}
+      </div>
+      <div class="row">
+          | Last Name : #{lastname}
+      </div>
+      <div class="row">
+          | Email : #{email}
+      </div>
+      <div class="row">
+          | DOB : #{dob}
+      </div>
+    </div>
+  </body>
+</html>
