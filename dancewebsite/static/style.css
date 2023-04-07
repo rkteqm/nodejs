@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Delicious Handrawn', cursive;
+    list-style-type: none;
+}
+
+#navbar{
+    background-color: #253544;
+    padding: 13px 14px;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style-type: none;
+}
+
+#navbar li a{
+    color: white;
+    font-size: xx-large;
+    text-decoration: none;
+    padding: 7px 27px;
+}
+
+#navbar li a:hover{
+    color: cadetblue;
+}
+
+#introSection{
+    color: white;
+    background: url("../static/d1.jpg") center center/cover no-repeat;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#introSection h2{
+    font-size: 80px;
+}
+
+#introSection p{
+    margin: 10px 350px;
+    font-size: 40px;
+}
+
+#sponsersSection{
+    color: white;
+    background: url("../static/d2.jpg") center center/cover no-repeat;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.osflex{
+    display: flex;
+}
+
+.osflex div{
+    margin: 0 10px;
+}
+
+#footer{
+    color: white;
+    background: url("../static/d3.jpg") center center/cover no-repeat;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}

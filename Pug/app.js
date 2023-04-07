@@ -1,12 +1,10 @@
 const express = require("express");
 const path = require("path");
-const bodyParser = require("body-parser");
 const app = express();
 const port = 3000;
 
 // EXPRESS SPECIFIC STUFF
 app.use("/static", express.static("static"));
-app.use(bodyParser.json());
 app.use(express.urlencoded());
 
 // PUG SPECIFIC STUFF

@@ -1,42 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node Js</title>
     <link rel="stylesheet" href="bootstrap.min.css">
-</head>
 
-<body>
-    <!-- Gallery -->
-    <div class="row">
-        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-                class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
-        </div>
-
-        <div class="col-lg-4 mb-4 mb-lg-0">
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-                class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
-
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-        </div>
-
-        <div class="col-lg-4 mb-4 mb-lg-0">
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-                class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
-
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
-        </div>
+  </head>
+  <body>
+    <div class="container">      
+      <form class="form-control" action="/" method="POST" id="contact">
+        <input class="form-control" type="text" name="firstname" id="firstname" placeholder="Enter your firstname">
+        <input class="form-control" type="text" name="lastname" id="lastname" placeholder="Enter your lastname">
+        <input class="form-control" type="text" name="email" id="email" placeholder="Enter your email">
+        <input class="form-control" type="text" name="dob" id="dob" placeholder="Enter your dob">
+        <button class="align-center form-btn btn btn-info text-primary" type="submit">Submit</button>
+      </form>
     </div>
-    <!-- Gallery -->
-</body>
-
+  </body>
 </html>

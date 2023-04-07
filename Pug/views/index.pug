@@ -22,14 +22,12 @@
     <div class="container">
 
       <h2>Get this gym membership for $60 - Hurry up Fill this form now!</h2>
-      <p>
-        | #{content}
-      </p>
+      
       <form class="form-control" action="/" method="POST" id="contact">
-        <input class="form-control" type="text" name="firstname" id="firstname" placeholder="Enter your firstname">
-        <input class="form-control" type="text" name="lastname" id="lastname" placeholder="Enter your lastname">
-        <input class="form-control" type="text" name="email" id="email" placeholder="Enter your email">
-        <input class="form-control" type="text" name="dob" id="dob" placeholder="Enter your dob">
+        <input class="form-control" type="text" name="firstname" id="firstname" value="#{firstname}" placeholder="Enter your firstname">
+        <input class="form-control" type="text" name="lastname" id="lastname" value="#{lastname}" placeholder="Enter your lastname">
+        <input class="form-control" type="text" name="email" id="email" value="#{email}" placeholder="Enter your email">
+        <input class="form-control" type="text" name="dob" id="dob" value="#{dob}" placeholder="Enter your dob">
         <button class="align-center form-btn btn btn-info text-primary" type="submit">Submit</button>
       </form>
     </div>

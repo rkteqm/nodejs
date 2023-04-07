@@ -1,0 +1,55 @@
+doctype html
+html
+    head 
+        title Dance Academy 
+        style 
+            include ../static/style.css 
+    body 
+        nav#navbar
+            ul 
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/") Contact Us]
+        
+        section#introSection
+            h2 
+                | DANCETIME EVERYONE ONLINE
+            p
+                | We bring the joy of dancing to your home! Online dance courses with popular fairy tale characters for children 4-9 years. Live interaction with the lecturer, thematic lessons and amazing experiences for your children. You can book private courses, open lessons are fully booked out.
+
+ 
+        
+        section#sponsersSection
+            h2
+                | Our Sponsers 
+            <ul class="list-group list-group-light">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="osflex">
+                    <div class="fw-bold">John Doe</div>
+                    <div class="text-muted">john.doe@gmail.com</div>
+                    <span class="badge rounded-pill badge-success">Active</span>
+                </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="osflex">
+                    <div class="fw-bold">Alex Ray</div>
+                    <div class="text-muted">alex.ray@gmail.com</div>
+                    <span class="badge rounded-pill badge-primary">Onboarding</span>
+                </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div class="osflex">
+                    <div class="fw-bold">Kate Hunington</div>
+                    <div class="text-muted">kate.hunington@gmail.com</div>
+                    <span class="badge rounded-pill badge-warning">Awaiting</span>
+                </div>
+                </li>
+            </ul>
+
+        footer#footer
+            | our footer here    
+
+        script 
+            include ../static/script.js
