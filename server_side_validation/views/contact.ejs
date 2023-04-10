@@ -15,14 +15,14 @@
     <div class="container">
         <h1 class="text-center">Submit form using node js</h1>
         <div class="container">
-            <form method="POST" action="/send">
+            <form method="POST" action="">
                 <!-- Name input -->
                 <div class="form-outline mb-4">
                     <label class="form-label" for="form4Example1">Name</label>
                     <% if(errors && errors.name) { %>
                     <span class="text-danger"><%= errors.name.msg %></span>
                     <% } %>
-                    <input type="text" name="name" id="form4Example1" class="form-control" />
+                    <input type="text" name="name" value="<%= formdata.name %>" id="form4Example1" class="form-control" />
                 </div>
 
                 <!-- Email input -->
@@ -31,7 +31,7 @@
                     <% if(errors && errors.email) { %>
                     <span class="text-danger"><%= errors.email.msg %></span>
                     <% } %>
-                    <input type="email" name="email" id="form4Example2" class="form-control" />
+                    <input type="email" name="email" value="<%= formdata.email %>" id="form4Example2" class="form-control" />
                 </div>
 
                 <!-- Message input -->
@@ -40,7 +40,7 @@
                     <% if(errors && errors.message) { %>
                     <span class="text-danger"><%= errors.message.msg %></span>
                     <% } %>
-                    <textarea class="form-control" id="form4Example3" name="message" rows="4"></textarea>
+                    <textarea class="form-control" name="message" id="form4Example3" rows="4"><%= formdata.message %></textarea>
                 </div>
 
                 <!-- Submit button -->
