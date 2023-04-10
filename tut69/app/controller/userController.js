@@ -6,7 +6,7 @@ exports.create = async (req, res) => {
     user.create(req, (err, data) => {
       let responsecode, responseobj;
       if (err) {
-       logger.logError(req.body, err, 0, "create");
+      //  logger.logError(req.body, err, 0, "create");
         responsecode = 401;
         responseobj = {
           status: 0,
