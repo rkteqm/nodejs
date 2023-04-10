@@ -58,6 +58,22 @@ const postsController = {
       });
     }
   },
+
+  delete: async (req, res) => {
+    try {
+      const { id } = req.params;
+      const sql = "delete from posts where id = ?";
+      const [rows, fields] = await pool.query(sql, [id]);
+      res.json({
+        data: rows,
+      });
+    } catch (error) {
+      console.log(error);
+      res.json({
+        status: "error",
+      });
+    }
+  },
 };
 
 module.exports = postsController;
