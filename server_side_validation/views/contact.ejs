@@ -16,13 +16,22 @@
         <h1 class="text-center">Submit form using node js</h1>
         <div class="container">
             <form method="POST" action="">
-                <!-- Name input -->
+                <!-- First Name input -->
                 <div class="form-outline mb-4">
-                    <label class="form-label" for="form4Example1">Name</label>
-                    <% if(errors && errors.name) { %>
-                    <span class="text-danger"><%= errors.name.msg %></span>
+                    <label class="form-label" for="form4Example1">First Name</label>
+                    <% if(errors && errors.firstname) { %>
+                    <span class="text-danger"><%= errors.firstname.msg %></span>
                     <% } %>
-                    <input type="text" name="name" value="<%= formdata.name %>" id="form4Example1" class="form-control" />
+                    <input type="text" name="firstname" value="<%= formdata.firstname %>" id="form4Example1" class="form-control" />
+                </div>
+
+                <!-- Last Name input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form4Example1">Last Name</label>
+                    <% if(errors && errors.lastname) { %>
+                    <span class="text-danger"><%= errors.lastname.msg %></span>
+                    <% } %>
+                    <input type="text" name="lastname" value="<%= formdata.lastname %>" id="form4Example1" class="form-control" />
                 </div>
 
                 <!-- Email input -->
@@ -32,6 +41,24 @@
                     <span class="text-danger"><%= errors.email.msg %></span>
                     <% } %>
                     <input type="email" name="email" value="<%= formdata.email %>" id="form4Example2" class="form-control" />
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form4Example2">Password</label>
+                    <% if(errors && errors.password) { %>
+                    <span class="text-danger"><%= errors.password.msg %></span>
+                    <% } %>
+                    <input type="password" name="password" value="<%= formdata.password %>" id="form4Example2" class="form-control" />
+                </div>
+
+                <!-- Confirm Password input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form4Example2">Confirm Password</label>
+                    <% if(errors && errors.confirm_password) { %>
+                    <span class="text-danger"><%= errors.confirm_password.msg %></span>
+                    <% } %>
+                    <input type="password" name="confirm_password" value="<%= formdata.confirm_password %>" id="form4Example2" class="form-control" />
                 </div>
 
                 <!-- Message input -->
