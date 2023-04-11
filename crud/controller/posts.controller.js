@@ -1,5 +1,16 @@
 const pool = require("../database/index");
 const postsController = {
+  getAllPosts: async (req, res) => {
+    try {
+      const [rows, fields] = await pool.query("select * from posts");
+      res.json({
+        data: rows,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  },
+  
   getAll: async (req, res) => {
     try {
       const [rows, fields] = await pool.query("select * from posts");
@@ -50,6 +61,7 @@ const postsController = {
       const [rows, fields] = await pool.query(sql, [title, content, id]);
       res.json({
         data: rows,
+        status: "success",
       });
     } catch (error) {
       console.log(error);
