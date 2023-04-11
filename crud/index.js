@@ -5,7 +5,7 @@ require('dotenv').config()
 
 const postsRouter = require('./routes/posts.router')
 
-app.use(express.urlencoded({extended: false}))
+app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 // Middleware authentication start**********
